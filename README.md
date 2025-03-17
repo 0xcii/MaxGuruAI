@@ -1,303 +1,151 @@
-# Eliza 🤖
+# MaxGuruAI 🔍
 
 <div align="center">
-  <img src="./docs/static/img/eliza_banner.jpg" alt="Eliza Banner" width="100%" />
+  <h3>AI-Driven On-Chain Data Analyst | AI 驱动的链上数据分析师</h3>
+  <p>Focus on real-time insights and analysis of cryptocurrency markets</p>
+  <p>专注于加密货币市场的实时洞察和分析</p>
 </div>
 
-<div align="center">
+## 📊 Overview | 概述
 
-📑 [Technical Report](https://arxiv.org/pdf/2501.06781) |  📖 [Documentation](https://elizaos.github.io/eliza/) | 🎯 [Examples](https://github.com/thejoven/awesome-eliza)
+[EN] MaxGuruAI is a professional cryptocurrency market analysis AI agent that combines blockchain data analysis, market insights, and social media interaction capabilities. It can track fund flows, identify market anomalies, predict trends, and expose potential fraudulent projects.
 
-</div>
+[中文] MaxGuruAI 是一个专业的加密货币市场分析 AI 代理，结合了区块链数据分析、市场洞察和社交媒体互动功能。它能够追踪资金流向、识别市场异常、预测趋势，并揭露潜在的欺诈项目。
 
-## 🌍 README Translations
+## 🌟 Core Features | 核心特性
 
-[中文说明](i18n/readme/README_CN.md) | [日本語の説明](i18n/readme/README_JA.md) | [한국어 설명](i18n/readme/README_KOR.md) | [Persian](i18n/readme/README_FA.md) | [Français](i18n/readme/README_FR.md) | [Português](i18n/readme/README_PTBR.md) | [Türkçe](i18n/readme/README_TR.md) | [Русский](i18n/readme/README_RU.md) | [Español](i18n/readme/README_ES.md) | [Italiano](i18n/readme/README_IT.md) | [ไทย](i18n/readme/README_TH.md) | [Deutsch](i18n/readme/README_DE.md) | [Tiếng Việt](i18n/readme/README_VI.md) | [עִברִית](i18n/readme/README_HE.md) | [Tagalog](i18n/readme/README_TG.md) | [Polski](i18n/readme/README_PL.md) | [Arabic](i18n/readme/README_AR.md) | [Hungarian](i18n/readme/README_HU.md) | [Srpski](i18n/readme/README_RS.md) | [Română](i18n/readme/README_RO.md) | [Nederlands](i18n/readme/README_NL.md) | [Ελληνικά](i18n/readme/README_GR.md)
+### 🔍 Professional Analysis Capabilities | 专业分析能力
+- On-chain data tracking and analysis | 链上数据追踪和分析
+- Market trend prediction | 市场趋势预测
+- Fraud project identification | 欺诈项目识别
+- Fund flow tracking | 资金流向追踪
+- Sonic ecosystem expert | Sonic 生态系统专家
 
-## 🚩 Overview
+### 💡 Unique Advantages | 独特优势
+- Bilingual interaction (Chinese & English) | 双语交互（中英文）
+- First principles-based analysis | 基于第一性原理的分析
+- Sharp and direct viewpoints | 犀利直接的观点表达
+- Deep market insights | 深度的市场洞察
+- Multidimensional knowledge background | 多维度知识背景
+  - Philosophy | 哲学
+  - Psychology | 心理学
+  - Finance | 金融学
 
-<div align="center">
-  <img src="./docs/static/img/eliza_diagram.png" alt="Eliza Diagram" width="100%" />
-</div>
+### 🤖 Technical Integration | 技术集成
+- DeepSeek AI model support | DeepSeek AI 模型支持
+- Multi-platform social media access | 多平台社交媒体接入
+- Real-time data analysis | 实时数据分析
+- Plugin architecture | 插件化架构
 
-## ✨ Features
+## 🛠️ Tech Stack | 技术栈
 
-- 🛠️ Full-featured Discord, X (Twitter) and Telegram connectors
-- 🔗 Support for every model (Llama, Grok, OpenAI, Anthropic, Gemini, etc.)
-- 👥 Multi-agent and room support
-- 📚 Easily ingest and interact with your documents
-- 💾 Retrievable memory and document store
-- 🚀 Highly extensible - create your own actions and clients
-- 📦 Just works!
+### Core Components | 核心组件
+- Model Provider | 模型提供商: DeepSeek
+- Client Support | 客户端支持: Twitter, Telegram, Lens
+- Data Sources | 数据源: CoinGecko, GoPlus, Web3 Data
 
-## Video Tutorials
+### Plugin System | 插件系统
+```typescript
+plugins: [
+    "@elizaos/plugin-web-search",    // 网页搜索
+    "@elizaos/plugin-coingecko",     // 加密货币数据
+    "@elizaos/plugin-evm",           // EVM链分析
+    "@elizaos/plugin-trustdb",       // 信任数据库
+    "@elizaos/plugin-goplus",        // 安全分析
+    "@elizaos/plugin-twitter"        // 推特集成
+]
+```
 
-[AI Agent Dev School](https://www.youtube.com/watch?v=ArptLpQiKfI&list=PLx5pnFXdPTRzWla0RaOxALTSTnVq53fKL)
+## 🚀 Quick Start | 快速开始
 
-## 🎯 Use Cases
-
-- 🤖 Chatbots
-- 🕵️ Autonomous Agents
-- 📈 Business Process Handling
-- 🎮 Video Game NPCs
-- 🧠 Trading
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- [Python 2.7+](https://www.python.org/downloads/)
-- [Node.js 23+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-- [pnpm](https://pnpm.io/installation)
-
-> **Note for Windows Users:** [WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install-manual) is required.
-
-### Use the Starter (Recommended for Agent Creation)
-
-Full steps and documentation can be found in the [Eliza Starter Repository](https://github.com/elizaOS/eliza-starter).
+### Installation | 安装
 ```bash
-git clone https://github.com/elizaos/eliza-starter.git
-cd eliza-starter
-cp .env.example .env
-pnpm i && pnpm build && pnpm start
-```
+# Clone the project | 克隆项目
+git clone [repository-url]
 
-### Manually Start Eliza (Only recommended for plugin or platform development)
+# Install dependencies | 安装依赖
+pnpm install
 
-#### Checkout the latest release
-
-```bash
-# Clone the repository
-git clone https://github.com/elizaos/eliza.git
-
-# This project iterates fast, so we recommend checking out the latest release
-git checkout $(git describe --tags --abbrev=0)
-# If the above doesn't checkout the latest release, this should work:
-# git checkout $(git describe --tags `git rev-list --tags --max-count=1`)
-```
-
-If you would like the sample character files too, then run this:
-```bash
-# Download characters submodule from the character repos
-git submodule update --init
-```
-
-#### Edit the .env file
-
-Copy .env.example to .env and fill in the appropriate values.
-
-```
+# Configure environment variables | 配置环境变量
 cp .env.example .env
 ```
 
-Note: .env is optional. If you're planning to run multiple distinct agents, you can pass secrets through the character JSON
+### Configuration | 配置
+Configure necessary API keys in the .env file | 在 .env 文件中配置必要的 API 密钥：
+```env
+DEEPSEEK_API_KEY=your-api-key
+TWITTER_USERNAME=MaxGuruAI
+TELEGRAM_BOT_TOKEN=your-bot-token
+COINGECKO_API_KEY=your-api-key
+```
 
-#### Start Eliza
-
+### Run | 运行
 ```bash
-pnpm i
 pnpm build
 pnpm start
-
-# The project iterates fast, sometimes you need to clean the project if you are coming back to the project
-pnpm clean
 ```
 
-### Interact via Browser
+## 💻 Usage Examples | 使用示例
 
-Once the agent is running, you should see the message to run "pnpm start:client" at the end.
-
-Open another terminal, move to the same directory, run the command below, then follow the URL to chat with your agent.
-
-```bash
-pnpm start:client
+### Market Analysis | 市场分析
+```typescript
+const maxGuru = new MaxGuruAI();
+const analysis = await maxGuru.generateResponse("分析 BTC 最近的价格走势");
 ```
 
-Then read the [Documentation](https://elizaos.github.io/eliza/) to learn how to customize your Eliza.
-
----
-
-### Automatically Start Eliza
-
-The start script provides an automated way to set up and run Eliza:
-
-```bash
-sh scripts/start.sh
+### Social Media Posting | 社交媒体发布
+```typescript
+const post = await maxGuru.generatePost("加密货币市场分析");
 ```
 
-For detailed instructions on using the start script, including character management and troubleshooting, see our [Start Script Guide](./docs/docs/guides/start-script.md).
+## 🎯 Use Cases | 应用场景
 
-> **Note**: The start script handles all dependencies, environment setup, and character management automatically.
+1. Market Analysis | 市场分析
+   - Real-time market trend analysis | 实时市场趋势分析
+   - Price trend prediction | 价格走势预测
+   - Market sentiment assessment | 市场情绪评估
 
----
+2. Risk Warning | 风险预警
+   - Fraud project identification | 欺诈项目识别
+   - Abnormal fund flow detection | 资金流向异常检测
+   - Market manipulation warning | 市场操纵预警
 
-### Modify Character
+3. Investment Advice | 投资建议
+   - Data-driven investment strategies | 基于数据的投资策略
+   - Risk assessment | 风险评估
+   - Opportunity identification | 机会识别
 
-1. Open `packages/core/src/defaultCharacter.ts` to modify the default character. Uncomment and edit.
+## ⚙️ Configuration Options | 配置选项
 
-2. To load custom characters:
-    - Use `pnpm start --characters="path/to/your/character.json"`
-    - Multiple character files can be loaded simultaneously
-3. Connect with X (Twitter)
-    - change `"clients": []` to `"clients": ["twitter"]` in the character file to connect with X
-
----
-
-### Add more plugins
-
-1. run `npx elizaos plugins list` to get a list of available plugins or visit https://elizaos.github.io/registry/
-
-2. run `npx elizaos plugins add @elizaos-plugins/plugin-NAME` to install the plugin into your instance
-
-#### Additional Requirements
-
-You may need to install Sharp. If you see an error when starting up, try installing it with the following command:
-
-```
-pnpm install --include=optional sharp
-```
-
----
-
-## Using Your Custom Plugins
-Plugins that are not in the official registry for ElizaOS can be used as well. Here's how:
-
-### Installation
-
-1. Upload the custom plugin to the packages folder:
-
-```
-packages/
-├─plugin-example/
-├── package.json
-├── tsconfig.json
-├── src/
-│   ├── index.ts        # Main plugin entry
-│   ├── actions/        # Custom actions
-│   ├── providers/      # Data providers
-│   ├── types.ts        # Type definitions
-│   └── environment.ts  # Configuration
-├── README.md
-└── LICENSE
-```
-
-2. Add the custom plugin to your project's dependencies in the agent's package.json:
-
+### Basic Settings | 基础设置
 ```json
 {
-  "dependencies": {
-    "@elizaos/plugin-example": "workspace:*"
-  }
+    "name": "MaxGuruAI",
+    "modelProvider": "deepseek",
+    "clients": ["lens", "twitter", "telegram"]
 }
 ```
 
-3. Import the custom plugin to your agent's character.json
-
+### Publishing Settings | 发布设置
 ```json
-  "plugins": [
-    "@elizaos/plugin-example",
-  ],
-```
-
----
-
-### Start Eliza with Gitpod
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/elizaos/eliza/tree/main)
-
----
-
-### Deploy Eliza in one click
-
-Use [Fleek](https://fleek.xyz/eliza/) to deploy Eliza in one click. This opens Eliza to non-developers and provides the following options to build your agent:
-1. Start with a template
-2. Build characterfile from scratch
-3. Upload pre-made characterfile
-
-Click [here](https://fleek.xyz/eliza/) to get started!
-
----
-
-### Community & contact
-
-- [GitHub Issues](https://github.com/elizaos/eliza/issues). Best for: bugs you encounter using Eliza, and feature proposals.
-- [elizaOS Discord](https://discord.gg/elizaos). Best for: hanging out with the elizaOS technical community
-- [DAO Discord](https://discord.gg/ai16z). Best for: hanging out with the larger non-technical community
-
-## Citation
-
-We now have a [paper](https://arxiv.org/pdf/2501.06781) you can cite for the Eliza OS:
-```bibtex
-@article{walters2025eliza,
-  title={Eliza: A Web3 friendly AI Agent Operating System},
-  author={Walters, Shaw and Gao, Sam and Nerd, Shakker and Da, Feng and Williams, Warren and Meng, Ting-Chien and Han, Hunter and He, Frank and Zhang, Allen and Wu, Ming and others},
-  journal={arXiv preprint arXiv:2501.06781},
-  year={2025}
+{
+    "POST_INTERVAL_MAX": "480",
+    "POST_INTERVAL_MIN": "240",
+    "POST_IMMEDIATELY": "true"
 }
 ```
 
-## Contributors
+## 🤝 Community Interaction | 社区互动
 
-<a href="https://github.com/elizaos/eliza/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=elizaos/eliza" alt="Eliza project contributors" />
-</a>
+- Twitter | 推特: [@MaxGuruAI](https://twitter.com/MaxGuruAI)
+- Telegram | 电报: [MaxGuruAI Bot](https://t.me/MaxGuruAI_bot)
 
+## 📝 License | 许可证
 
-## Star History
+MIT License | MIT 许可证
 
-[![Star History Chart](https://api.star-history.com/svg?repos=elizaos/eliza&type=Date)](https://star-history.com/#elizaos/eliza&Date)
+## ⚠️ Disclaimer | 免责声明
 
-## 🛠️ System Requirements
+[EN] The analysis and suggestions provided by MaxGuruAI are for reference only and do not constitute investment advice. Users should bear their own risks when using this tool for investment decisions.
 
-### Minimum Requirements
-- CPU: Dual-core processor
-- RAM: 4GB
-- Storage: 1GB free space
-- Internet connection: Broadband (1 Mbps+)
-
-### Software Requirements
-- Python 2.7+ (3.8+ recommended)
-- Node.js 23+
-- pnpm
-- Git
-
-### Optional Requirements
-- GPU: For running local LLM models
-- Additional storage: For document storage and memory
-- Higher RAM: For running multiple agents
-
-## 📁 Project Structure
-```
-eliza/
-├── packages/
-│   ├── core/           # Core Eliza functionality
-│   ├── clients/        # Client implementations
-│   └── actions/        # Custom actions
-├── docs/              # Documentation
-├── scripts/           # Utility scripts
-└── examples/          # Example implementations
-```
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-### Getting Started
-1. Fork the repository
-2. Create a new branch: `git checkout -b feature/your-feature-name`
-3. Make your changes
-4. Run tests: `pnpm test`
-5. Submit a pull request
-
-### Types of Contributions
-- 🐛 Bug fixes
-- ✨ New features
-- 📚 Documentation improvements
-- 🌍 Translations
-- 🧪 Test improvements
-
-### Code Style
-- Follow the existing code style
-- Add comments for complex logic
-- Update documentation for changes
-- Add tests for new features
+[中文] MaxGuruAI 提供的分析和建议仅供参考，不构成投资建议。用户应自行承担使用本工具进行投资决策的风险。
